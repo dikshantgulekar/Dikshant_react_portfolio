@@ -1,0 +1,57 @@
+
+
+.portfolioNav{
+    width: 1200px;
+    /* border: solid 1px red; */
+    margin: auto;
+
+}
+
+.portfolioBtn{
+    display: grid;
+    grid-template-columns: repeat(4 , 1fr);
+    gap: 20px
+
+}
+
+.project-btn{
+    font-family:  "Poppins", sans-serif;
+    margin: 5px;
+    background: var(--color-bg-variant);
+    font-weight: 400;
+    font-size: 25px;
+    border-radius: 25px;
+    border: solid 1px green;
+    color: #FFFF;
+    padding: 5px 0px 5px 0px;
+}
+
+
+.project-btn:hover{
+    border-color: var(--color-primary);
+    background: transparent;
+    cursor: pointer;
+}
+
+  
+  /* ////////////////// MEDIA QUERY (small device) /////////////////// */
+  @media screen  and (max-width:575px) {
+    .portfolioNav{
+        width: 100%;
+    }
+    .portfolioBtn{
+        grid-template-columns: 1fr 1fr;
+        gap:10px
+    }
+
+    .project-btn{
+        font-size: 15px;
+        width:90%;
+        padding: 5px;
+    }
+
+    .project-btn:hover{
+        border-color: var(--color-primary);
+        background: transparent;
+    }
+  }
